@@ -1,6 +1,6 @@
 import React from 'react';
 import { FiArrowRight } from 'react-icons/fi';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../styles/global.css';
 import '../styles/pages/landing.css';
@@ -11,19 +11,20 @@ import logoImg from '../img/Logo.svg';
 
 
 function Landing() {
-    return (
-<div id="page-landing">
+  return (
+    <div id="page-landing">
       <div className="content-wrapper">
 
         <img src={logoImg} alt="Happy" />
         <main>
           <h1>Leve felicidade para o mundo</h1>
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
-          <div className="location">
-            <strong>Rio do Sul</strong>
-            <span>Santa Catarina</span>
-          </div>
         </main>
+        <div className="location">
+          <strong>Rio do Sul</strong>
+          <span>Santa Catarina</span>
+        </div>
+
 
 
         <Link to="/app" className="enter-app">
@@ -32,7 +33,7 @@ function Landing() {
 
       </div>
     </div>
-    );
+  );
 }
 
 export default Landing

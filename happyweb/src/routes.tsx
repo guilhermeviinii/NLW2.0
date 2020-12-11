@@ -8,8 +8,8 @@ function Routes() {
     return (
         <BrowserRouter>
             <Switch>
-                <Route Path="/" exact component={OrphanagesMap} />
-                <Route Path="/app" component={OrphanagesMap} />
+                <Route path="/" exact component={Landing} />
+                <Route path="/app" component={OrphanagesMap} />
             </Switch>
         </BrowserRouter>
     );
